@@ -1,0 +1,13 @@
+{
+  "transforms": [
+    {
+      "mode": "sql",
+      "include": "**/*.sql",
+      "emitTemplate": "{{dir}}/{{name}}.queries.ts"
+    }
+  ],
+  "srcDir": "api/src/",
+  "failOnError": false,
+  "camelCaseColumnNames": true,
+  "dbUrl": "postgres://postgres:no_pass@localhost:5435/shorty"
+}
